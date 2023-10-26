@@ -7,7 +7,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/rockBackground.png) ;
+    background-image: url(../img/rockBackground.png) ;
     background-size: 100%;
     background-repeat:round;
     margin: 0;
