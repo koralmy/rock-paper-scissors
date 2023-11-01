@@ -26,7 +26,7 @@ body {
 #opponent-score {
     color:black;
     background-color: hwb(54 0% 0% / 0.721);
-    padding: 10px;
+    width: 30vw;
     border-radius: 20px;
 
 }
@@ -34,8 +34,9 @@ body {
 #your-score {
     color: black;
     background-color: hwb(54 0% 0% / 0.721);
-    padding: 10px;
     border-radius: 20px;
+    width: 30vw;
+
 
 }
 
@@ -77,6 +78,14 @@ hr {
     height: 80px;
 }
 
+
+h3 {
+    color:  hwb(54 0% 0% / 0.721);
+    font-size: 10vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titan One', sans-serif;
+}
 
 
 
