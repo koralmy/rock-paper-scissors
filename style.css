@@ -7,16 +7,44 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(./img/rockBackground.png) ;
+    /* background-image: url(./img/rockBackground.png) ;
     background-size: 100%;
-    background-repeat:round;
+    background-repeat:round; */
+
+    background-color: #fff;
     margin: 0;
     padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+
+}
+
+h1{ 
+    margin: 0;
+    font-size: 3vw;
+
+}
+
+.score-table{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 #opponent-choice {
-    width: 9.375rem;
-    height: 9.375rem;
+    width: 25vw;
+    height: 25vh;
     margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.566);
     padding: 5px;
@@ -40,6 +68,7 @@ body {
 
 }
 
+
 hr {
   width:10%;
   text-align:center;
@@ -48,8 +77,8 @@ hr {
 }
 
 #your-choice {
-    width: 9.375rem;
-    height: 9.375rem;
+    width: 25vw;
+    height: 25vh;
     margin-top: 10px; 
     background-color: rgba(255, 255, 255, 0.566);
     padding: 5px;
@@ -64,18 +93,19 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5%;
 }
 
 #choices img {
-    width: 75px;
-    height: 70px;
+    width: 10vw;
+    height: 10vh;
     cursor: pointer;
 }
 
 
 #choices img:hover {
-    width: 80px;
-    height: 80px;
+    width: 15vw;
+    height: 15vh;
 }
 
 
@@ -133,26 +163,44 @@ span {
     font-size: 12px;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-    body {
-    width: 100vw;
-    height: 100vh;
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    .pics {
+        flex-direction: column;
+    }
+
+
+
+    #opponent-choice,#your-choice {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    #choices img {
+        width: 5rem;
+        height: 5rem;
+
+    }
+
+    #choices img:hover {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    #opponent-score, #your-score {
+        width: 40vw; 
+    } 
+
+    h1 {
+        font-size: 3.2vw;
+    }
+
+    h3 {
+        font-size: 15vw;
+    }
 }
 
-    #opponent-choice {
-    width: 6.25rem;
-    height: 6.25rem;
-}
 
-#opponent-score {
-    font-size: 20px
-}
 
-#your-score {
-    font-size: 20px
-}
-#your-choice {
-    width: 6.25rem;
-    height: 6.25rem;
-}
-}

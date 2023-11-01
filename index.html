@@ -18,23 +18,31 @@
 <body>
 
     <div id="startModal" class="modal">
-    <div class="modal-content">
+        <div class="modal-content">
         <h2 class="modal-h2">Welcome to Rock-Paper-Scissors!</h2>
         <p class="modal-p">Click the button below to start the game. <br><br> <span> Whoever gets to 5 points first wins! </span></p>
         <button class="modal-btn" id="startButton">Start Game</button>
     </div>
+
+
+    </div>
+        <div class="score-table">
+          <h1 id="your-score">0</h1>
+          <h1 id="opponent-score">0</h1>
     </div>
 
-    <h1 id="opponent-score">0</h1>
-    <img id="opponent-choice">
-    <br>
-    <!-- <hr> -->
-    <h3>Vs</h3>
-    <br>
-    <img id="your-choice">
-    <div id="choices"></div>
+    <div class="pics">
+        <img id="opponent-choice">
+        <h3>Vs</h3>
+        <!-- <br> -->
+        <img id="your-choice">
+    </div>
 
-    <h1 id="your-score">0</h1>
+    <div id="choices">
+        <!-- Rock/Paper/Scissors -->
+    </div>
+
+
     
     <script src="script.js"></script>
 </body>
